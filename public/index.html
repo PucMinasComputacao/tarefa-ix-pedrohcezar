@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Mini Ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Mini Ecommerce</h1>
+        <p>Catálogo de produtos criado com JavaScript e DOM</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input type="text" id="search" placeholder="Buscar produto...">
+
+            <select id="category">
+                <option value="Todas">Todas</option>
+            </select>
+
+            <button id="btnRender">Renderizar</button>
+        </section>
+
+        <section>
+            <h2>Produtos</h2>
+            <div id="product-list"></div>
+        </section>
+
+        <section id="product-details">
+            <h2>Detalhes do produto</h2>
+            <p>Clique em “Ver detalhes” para visualizar as informações completas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Atividade Prática - Funções e Manipulação do DOM</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
